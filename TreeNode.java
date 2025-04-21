@@ -1,5 +1,5 @@
-// Grace Cochran, 4/11-18/25
-//Tree Demo!
+// Grace Cochran
+// COS 225 - Hw 6
 
 public class TreeNode<T>{
     
