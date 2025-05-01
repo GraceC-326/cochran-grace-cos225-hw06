@@ -162,7 +162,7 @@ public class TreeNode<T>{
     }
 
     // O (n)
-    public void badRemoval(T element){ // can and will cut off branches and not free shit
+    public void badRemoval(T element){ // can and will cut off branches and not free anything
         if (this.getLeft().getElement().equals(element)){
             this.setLeft(null);
         } else if (this.getRight().getElement().equals(element)){
