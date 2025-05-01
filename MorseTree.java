@@ -1,3 +1,5 @@
+// Grace Cochran
+// COS 225 - HW6
 public class MorseTree {
     
     public TreeNode<Character> root;

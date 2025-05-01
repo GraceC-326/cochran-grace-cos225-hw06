@@ -1,3 +1,5 @@
+// Grace Cochran
+// COS 225 - HW6
 public class MorseTester {
     public static void main() {
 
@@ -37,6 +39,6 @@ public class MorseTester {
         morsecoder.morsePostorder();
 
         String testString = "go watch a playthrough of rolypolys no nanakorobi yaoki";
-
+        // this is a relevant reference i swear
     }
 }
