@@ -16,8 +16,9 @@ public class MorseTree {
         root.postOrder(root);
     }    
 
+    // calls encodeChar for every letter in the string, sepparating the encoded characters by "|"
     public String encoder(String input){
-        // letter
+
         String finalStr = "";
         for (int i = 0; i < input.length(); i++){
             finalStr = finalStr + encodeChar(input.charAt(i), "", root);
@@ -26,9 +27,9 @@ public class MorseTree {
         return finalStr;
     }
 
+    // given the morse tree and a character of the string to be encoded, it checks if the character matches a node in the morse tree, if not it adds a dot or dash depending on how the inputted character is searched through the tree. 
     public String encodeChar(char input, String output, TreeNode<Character> node){
-        // letter
-
+        
         if (node.getElement() == input){
             return output;
         }
@@ -45,6 +46,7 @@ public class MorseTree {
         }
     }
 
+    // first splits the encoded input by "|", then calls decodeChar for every encoded letter in the string array.
     public String decoder(String input){
         // for loop for entire string 
         String[] splitStrings = input.split("/|");
@@ -57,9 +59,8 @@ public class MorseTree {
         return finalStr;
     }
 
+    // Steps through the morse code tree to find a letter given its encoded self, moving left & right down the string based on if the string has a dot or dash.
     public String decodeChar(String input){
-        // if a dot, go left, if  a dash, go right.
-        // step thru the tree
         
         TreeNode<Character> temp = root;
         for (int i = 0; i < input.length(); i++){
