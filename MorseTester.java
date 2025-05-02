@@ -40,5 +40,11 @@ public class MorseTester {
 
         String testString = "go watch a playthrough of rolypolys no nanakorobi yaoki";
         // this is a relevant reference i swear
+
+        String encodedStr = morsecoder.encoder(testString);
+        System.out.println(encodedStr);
+        String decodedStr = morsecoder.encoder(encodedStr);
+        System.out.println(decodedStr);
+        
     }
 }
