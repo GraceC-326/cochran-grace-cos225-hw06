@@ -43,7 +43,7 @@ public class MorseTester {
 
         String encodedStr = morsecoder.encoder(testString);
         System.out.println(encodedStr);
-        String decodedStr = morsecoder.encoder(encodedStr);
+        String decodedStr = morsecoder.decoder(encodedStr);
         System.out.println(decodedStr);
 
     }
