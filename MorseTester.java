@@ -1,7 +1,7 @@
 // Grace Cochran
 // COS 225 - HW6
 public class MorseTester {
-    public static void main() {
+    public static void main(String[] args){
 
         MorseTree morsecoder = new MorseTree();
 
@@ -45,6 +45,6 @@ public class MorseTester {
         System.out.println(encodedStr);
         String decodedStr = morsecoder.encoder(encodedStr);
         System.out.println(decodedStr);
-        
+
     }
 }
