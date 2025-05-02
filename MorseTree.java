@@ -5,7 +5,7 @@ public class MorseTree {
     public TreeNode<Character> root;
 
     public MorseTree(){
-        root = new TreeNode<>(null);
+        root = new TreeNode<>('_');
     }
 
     public void morsePreorder(){
@@ -49,7 +49,7 @@ public class MorseTree {
     // first splits the encoded input by "|", then calls decodeChar for every encoded letter in the string array.
     public String decoder(String input){
         // for loop for entire string 
-        String[] splitStrings = input.split("/|");
+        String[] splitStrings = input.split("\\|");
         String finalStr = "";
         for (int i = 0; i < splitStrings.length; i++){
             String temp = decodeChar(splitStrings[i]);
